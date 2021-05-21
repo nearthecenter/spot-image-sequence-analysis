@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture(r"C:\Users\reang\Downloads\physci-edited.m4v")
+cap = cv2.VideoCapture("physci-edited.m4v")
 while(cap.isOpened()):
   ret, frame = cap.read()
   gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
